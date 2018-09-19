@@ -4,8 +4,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo 'ADD docker/ECS build and push into ECR repo'
             }
+            post {
+		success{
+			 echo 'Add aws script here'
+			}
+		}
         }
         stage('Test') {
             steps {
