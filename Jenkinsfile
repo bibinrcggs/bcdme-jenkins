@@ -8,7 +8,7 @@ pipeline {
             }
             post {
 		success{
-			 sh 'docker ps' 
+			 docker ps
 			}
 		}
         }
