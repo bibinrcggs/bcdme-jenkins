@@ -4,13 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'ADD docker/ECS build and push into ECR repo'
+                echo 'build step'
             }
-            post {
-		success{
-			 docker ps
-			}
-		}
         }
         stage('Test') {
             steps {
