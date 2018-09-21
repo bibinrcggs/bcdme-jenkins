@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                docker ps
                 echo 'build'
             }
         }
