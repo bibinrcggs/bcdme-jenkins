@@ -8,7 +8,7 @@ pipeline {
             }
             post {
 		success{
-			 echo 'Add aws script here'
+			 sh 'docker ps' 
 			}
 		}
         }
