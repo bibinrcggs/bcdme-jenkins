@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'apt install docker'
+                aws help
             }
         }
         stage('Test') {
