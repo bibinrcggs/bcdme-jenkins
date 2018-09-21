@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                aws help
+                echo 'build'
             }
         }
         stage('Test') {
